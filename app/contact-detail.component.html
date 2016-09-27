@@ -1,0 +1,25 @@
+<div class="row" style="text-align:center;">
+    <div class="col-md-offset-4 col-md-4">
+        <div *ngIf="contact">
+            <h4>{{contact.name}}</h4>
+            <div class="form-horzontal">
+                <div class="form-group">
+                    <label for="" class="col-sm-4 control-label">Name</label>
+                    <div class="col-sm-8">
+                        <input [(ngModel)]="contact.name" class="form-control" placeholder="name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-4 control-label">Phone No.</label>
+                    <div class="col-sm-8">
+                        <input [(ngModel)]="contact.phoneNo" class="form-control" placeholder="name" />
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top:20px;" >
+                    <button style="margin-top:20px;" class="btn btn-defaut" type="" (click)="goBack()">Back</button>
+                    <button style="margin-top:20px;" class="btn btn-defaut" (click)="save()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

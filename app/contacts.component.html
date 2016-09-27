@@ -1,0 +1,10 @@
+
+<div class="row">
+    <div class="col-md-offset-4 col-md-4 col-sm-12">
+        <h1 style="text-align:center;">contacts</h1>
+
+        <ul>
+            <li (click)='gotoDetail(contact)' *ngFor="let contact of contacts"><span>{{contact.name}}</span><span class="pull-right"><i [title] ="deleteContact" class="fa fa-trash " aria-hidden="true" (click)="delete(contact); $event.stopPropagation()"></i></span></li>
+        </ul>
+    </div>
+</div>
